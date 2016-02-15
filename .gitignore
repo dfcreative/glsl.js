@@ -6,3 +6,4 @@ test.glsl
 test.js
 !tests/*
 testasm.*
+*.log
