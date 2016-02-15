@@ -1,16 +1,18 @@
 {
   "name": "glsl",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A GLSL to ASM.js compiler",
   "main": "compiler.js",
   "directories": {
     "test": "tests"
   },
   "devDependencies": {
-    "escodegen": "~0.0.15",
-    "mocha": "~1.13.0"
+    "escodegen": "^1.8.0",
+    "jison": "^0.4.17",
+    "mocha": "^2.4.5"
   },
   "scripts": {
+    "build": "jison glsl.y",
     "test": "mocha tests/"
   },
   "repository": {
